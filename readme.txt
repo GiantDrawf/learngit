@@ -45,6 +45,8 @@ Git学习历程及心得
  		git commit命令成功后会告诉你，一个文件被改动，插入了*行的内容
 
 三.正式使用Git版本控制系统
+(1).在版本库中添加修改文件
+
 	我们修改了readme.txt里面的内容：
 	现在运行git bash，输入命令行git status查看结果:
 	$ git status
@@ -68,4 +70,20 @@ Git学习历程及心得
 	-Git is a version control system.
 	+Git is a distributed version control system.
 	 Git is free software.
-	下面我们就可以放心的提交了
+	下面我们就可以放心的提交了：
+	$ git add readme.txt
+	没有提示，表示添加成功，然后我们来提交：
+	$ git commit -m "我修改了！"
+	提示：
+	[master 0141bc2] 我修改了！
+	1 file changed, 71 insertions(+), 2 deletions(-)
+ 	rewrite readme.txt (100%)
+ 	完成后我们再来查看工作区状态:
+ 	$ git status
+ 	On branch master
+	nothing to commit, working directory clean
+
+(2).版本回退
+	在项目开发过程中，可能会有上百次的修改提交，每commit一次就可以“保存一个快照”，一旦你把文件弄乱了或者是误删了文件，还可以从最近的一次commit恢复，然后继续工作。
+
+
