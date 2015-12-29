@@ -84,6 +84,24 @@ Git学习历程及心得
 	nothing to commit, working directory clean
 
 (2).版本回退
-	在项目开发过程中，可能会有上百次的修改提交，每commit一次就可以“保存一个快照”，一旦你把文件弄乱了或者是误删了文件，还可以从最近的一次commit恢复，然后继续工作。
+	在项目开发过程中，可能会有上百次的修改提交，每commit一次就可以“保存一个快照”，一旦你把文件弄乱了或者是误删了文件，还可以从最近的一次commit恢复，然后继续工作。但是，项目开发中可能会动辄修改上百甚至是上千行代码，我们无法记住我们究竟修改了哪些，所以Git中有一个命令告诉我们历史记录，就是git log：
+	$ git log
+	commit cb761873d4545df6795b3112671e95ec6fc69462
+	Author: GiantDwarf <zhujian1995@outlook.com>
+	Date:   Tue Dec 29 18:00:40 2015 +0800
+
+    最近一次修改！
+
+	commit 0141bc280ba4766bdc9f756cfd258acdfe2f2c16
+	Author: GiantDwarf <zhujian1995@outlook.com>
+	Date:   Tue Dec 29 17:50:16 2015 +0800
+
+    我修改了！
+
+	commit 2eebe95265d27765d8501a3a83f3b9c938aba26e
+	Author: GiantDwarf <zhujian1995@outlook.com>
+	Date:   Tue Dec 29 16:58:11 2015 +0800
+
+    wrote a readme file
 
 
