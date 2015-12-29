@@ -104,4 +104,5 @@ Git学习历程及心得
 
     wrote a readme file
 
+    我们可以看到三次commit记录，如果嫌输出信息太多，我们可以试着加上--pretty=oneline参数
 
